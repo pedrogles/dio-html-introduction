@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Santander Bootcamp | Dio</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                padding: 1rem;
+            }
+            main {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            article {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+            }
+            article > article {
+                display: flex;
+                flex-direction: column;
+                gap: .2rem;
+            }
+            ul {
+                margin-left: 1.4rem;
+            }
+            .normal-weight {
+                font-weight: normal;
+            }
+            .article-title, .section-title {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div>
+                <h1 id="page-title">Client x Servidor - Git e Github - Fundamentos do HTML</h1>
+                <hr />
+            </div>
+
+            <section>
+                <h2>Índice</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#client-server">Comunicação Client x Servidor</a></li>
+                        <li><a href="#git-github">Versionamento com Git e GitHub</a></li>
+                        <li><a href="#html-fundamentals">Fundamentos Essenciais do HTML: Estrutura, Formulários, Mídias, Tabelas e Semântica</a></li>
+                        <li><a href="#links">Links de referências</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <article>
+                    <div class="article-title">
+                        <h2 id="client-server"><u>Comunicação Client x Servidor</u></h2>
+                        <a href="#page-title">voltar</a>
+                    </div>
+                    <p>A comunicação <strong>Client</strong> x <strong>Servidor</strong> acontece quando um cliente (como um navegador) faz uma <i>requisição</i> a um servidor, que processa a informação e responde com os dados solicitados. Esse modelo é base para aplicações web, onde o cliente envia pedidos <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP" target="_blank" rel="noopener noreferrer">HTTP</a> e o servidor responde com conteúdos como HTML, <a href="https://www.oracle.com/br/database/what-is-json/" target="_blank" rel="noopener noreferrer">JSON</a> ou arquivos. Essa troca ocorre de forma rápida e contínua durante o uso da aplicação.</p>
+                </article>
+                
+                <article>
+                    <div class="article-title">
+                        <h2 id="git-github"><u>Versionamento com Git e GitHub</u></h2>
+                        <a href="#page-title">voltar</a>
+                    </div>
+                    <p><a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a> é um <i>sistema de controle de versão</i> que permite acompanhar todas as alterações feitas no código. Com ele, é possível voltar a versões anteriores, trabalhar em paralelo com outras pessoas e manter a integridade do projeto. O <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> entra como uma <i>plataforma online</i> para hospedar esses repositórios, facilitando a colaboração, o histórico de mudanças e o controle das versões de forma visual e acessível.</p>
+                </article>
+                
+                <article>
+                    <div class="article-title">
+                        <h2 id="html-fundamentals"><u>Fundamentos Essenciais do HTML: <span class="normal-weight">Estrutura, Formulários, Mídias, Tabelas e Semântica</span></u></h2>
+                        <a href="#page-title">voltar</a>
+                    </div>
+                    <article>
+                        <h3><u>Estruturação e Formatação no HTML</u></h3>
+                        <p>O <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">HTML</a> é a base da web e serve para estruturar o conteúdo de uma página. Com ele, usamos tags de formatação como <code><strong>&lt;strong&gt;</strong>, <strong>&lt;em&gt;</strong>, <strong>&lt;br&gt;</strong> e <strong>&lt;p&gt;</strong></code> para organizar o texto e dar significado ao conteúdo.</p>
+                    </article>
+                    <article>
+                        <h3><u>Formulários</u></h3>
+                        <p>Formulários são essenciais para capturar dados do usuário. Com tags como <code><strong>&lt;form&gt;</strong>, <strong>&lt;input&gt;</strong>, <strong>&lt;textarea&gt;</strong>, <strong>&lt;select&gt;</strong> e <strong>&lt;button&gt;</strong></code>, é possível criar campos de login, cadastros e buscas. Esses dados geralmente são enviados ao servidor para processamento.</p>
+                    </article>
+                    <article>
+                        <h3><u>Mídias</u></h3>
+                        <p>O HTML permite inserir diferentes tipos de mídia com facilidade. Imagens usam a tag <code><strong>&lt;img&gt;</strong></code>, vídeos com <code><strong>&lt;video&gt;</strong></code> e áudios com <code><strong>&lt;audio&gt;</strong></code>. Também é possível usar <code><strong>&lt;source&gt;</strong></code> para diferentes formatos e garantir compatibilidade entre navegadores.</p>
+                    </article>
+                    <article>
+                        <h3><u>Tabelas</u></h3>
+                        <p>Para exibir dados organizados, usamos tabelas com <code><strong>&lt;table&gt;</strong>, <strong>&lt;tr&gt;</strong>, <strong>&lt;td&gt;</strong>, <strong>&lt;th&gt;</strong> e <strong>&lt;thead&gt;</strong>/strong&lt;tbody&gt;</code>. Embora não sejam recomendadas para layout, são ótimas para representar informações tabulares de forma acessível.</p>
+                    </article>
+                    <article>
+                        <h3><u>Semântica</u></h3>
+                        <p>Tags semânticas como <code><strong>&lt;header&gt;</strong>, <strong>&lt;nav&gt;</strong>, <strong>&lt;section&gt;</strong>, <strong>&lt;article&gt;</strong>, <strong>&lt;main&gt;</strong> e <strong>&lt;footer&gt;</strong></code> ajudam a dar significado à estrutura da página. Elas melhoram a acessibilidade e o SEO, tornando o HTML mais legível tanto para humanos quanto para máquinas.</p>
+                    </article>
+                </article>
+
+                <section>
+                    <div class="section-title">
+                        <h2 id="links"><u>Links de referências</u></h2>
+                        <a href="#page-title">voltar</a>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.oracle.com/" target="_blank" rel="noopener noreferrer">Oracle</a></li>
+                        <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+                    </ul>
+                </section>
+            </section>      
+        </main>
+    </body>
+</html>
